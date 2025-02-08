@@ -355,6 +355,7 @@ body {
 .service-card {
   background-color: var(--white-1);
   padding: 20px 15px;
+  height: 100%;
   border: 1px solid var(--platinum);
   border-radius: 15px;
   text-align: center;
