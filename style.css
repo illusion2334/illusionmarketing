@@ -1,24 +1,7 @@
-/*-----------------------------------*\
-  #style.css
-\*-----------------------------------*/
 
-/**
- * copyright 2022 codewithsadee
- */
-
-
-
-
-
-/*-----------------------------------*\
-  #CUSTOM PROPERTY
-\*-----------------------------------*/
 
 :root {
 
-  /**
-   * colors
-   */
 
   --safety-orange: hsl(235.82deg 100% 15.92%);
   --lavender-gray: hsl(230, 19%, 81%);
@@ -36,15 +19,8 @@
   --white-2: hsl(0, 14%, 98%);
   --black: hsl(0, 0%, 0%);
 
-  /**
-   * gradient color
-   */
-
   --gradient: linear-gradient(to left top, var(--persian-rose), var(--safety-orange));
 
-  /**
-   * typography
-   */
 
   --ff-roboto: 'Roboto', sans-serif;
   --ff-league-spartan: 'League Spartan', sans-serif;
@@ -58,46 +34,12 @@
 
   --fw-700: 700;
   --fw-500: 500;
-
-  /**
-   * spacing
-   */
-
   --section-padding: 60px;
-
-  /**
-   * shadow
-   */
-
-  --shadow-1: 0 6px 24px var(--black_5);
-  --shadow-2: 0 2px 28px var(--black_10);
-
-  /**
-   * border radius
-   */
-
-  --radius-2: 2px;
-  --radius-5: 5px;
-  --radius-8: 8px;
-
-  /**
-   * transition
-   */
-
   --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
   --cubic-out: cubic-bezier(0.33, 0.85, 0.4, 0.96);
 
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #RESET
-\*-----------------------------------*/
-
 *,
 *::before,
 *::after {
@@ -164,15 +106,6 @@ body {
 ::-webkit-scrollbar-thumb:hover { background-color: hsl(0, 0%, 70%); }
 
 :focus-visible { outline-offset: 4px; }
-
-
-
-
-
-/*-----------------------------------*\
-  #REUSED STYLE
-\*-----------------------------------*/
-
 .container { padding-inline: 15px; }
 
 .btn {
@@ -387,19 +320,8 @@ body {
 }
 
 .service-card .card-title { margin-block: 20px 8px; }
-
 .service-card .card-text { font-size: var(--fs-6); }
-
-
-
-
-
-/*-----------------------------------*\
-  #PROJECT
-\*-----------------------------------*/
-
 .project .section-text { margin-block: 5px 35px; }
-
 .project-card {
   position: relative;
   border-radius: var(--radius-8);
@@ -442,15 +364,6 @@ body {
   color: var(--white-1);
   margin-block: 12px 15px;
 }
-
-
-
-
-
-/*-----------------------------------*\
-  #ABOUT
-\*-----------------------------------*/
-
 .about { background-color: var(--white-2); }
 
 .about-banner {
@@ -502,14 +415,6 @@ body {
 
 .about-item:not(:last-child) { margin-block-end: 12px; }
 
-
-
-
-
-/*-----------------------------------*\
-  #CTA
-\*-----------------------------------*/
-
 .cta {
   position: relative;
   background-repeat: no-repeat;
@@ -541,16 +446,8 @@ body {
 }
 
 .cta .section-title { margin-block: 12px 18px; }
-
 .cta .btn { margin-inline: auto; }
-
-
-/*-----------------------------------*\
-  #CONTACT
-\*-----------------------------------*/
-
 .contact { background-color: var(--white-2); }
-
 .contact .section-text { margin-block: 5px 35px; }
 
 .contact-form {
@@ -652,14 +549,6 @@ textarea.input-field {
 
 .contact-card .card-link:is(:hover, :focus) { color: var(--red-crayola); }
 
-
-
-
-
-/*-----------------------------------*\
-  #FOOTER
-\*-----------------------------------*/
-
 .footer {
   background-color: var(--white-2);
   padding-block: 20px;
@@ -679,10 +568,6 @@ textarea.input-field {
 
 
 
-
-/*-----------------------------------*\
-  #BACK TO TOP
-\*-----------------------------------*/
 
 .back-top-btn {
   position: fixed;
@@ -711,19 +596,7 @@ textarea.input-field {
 
 
 
-/*-----------------------------------*\
-  #MEDIA QUERIES
-\*-----------------------------------*/
-
-/**
- * responsive for larger than 575px screen
- */
-
 @media (min-width: 575px) {
-
-  /**
-   * REUSED STYLE
-   */
 
   .container {
     max-width: 540px;
@@ -737,11 +610,6 @@ textarea.input-field {
   }
 
 
-
-  /**
-   * BLOG
-   */
-
   .blog .grid-list { grid-template-columns: 1fr; }
 
   .blog-card.grid {
@@ -752,10 +620,6 @@ textarea.input-field {
   }
 
 
-
-  /**
-   * CONTACT
-   */
 
   .input-wrapper {
     display: flex;
@@ -769,22 +633,10 @@ textarea.input-field {
 
 
 
-
-/**
- * responsive for larger than 768px screen
- */
-
 @media (min-width: 768px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
 
-    /**
-     * typography
-     */
 
     --fs-1: 4.5rem;
     --fs-2: 3.7rem;
@@ -797,10 +649,6 @@ textarea.input-field {
 
 
 
-  /**
-   * REUSED STYLE
-   */
-
   .container { max-width: 720px; }
 
   .section-text {
@@ -810,10 +658,6 @@ textarea.input-field {
 
 
 
-  /**
-   * HERO
-   */
-
   .hero-text {
     max-width: 60ch;
     margin-inline: auto;
@@ -821,9 +665,6 @@ textarea.input-field {
 
 
 
-  /**
-   * ABOUT
-   */
 
   .about-banner { max-width: 550px; }
 
@@ -834,9 +675,6 @@ textarea.input-field {
 
 
 
-  /**
-   * CONTACT
-   */
 
   .contact-form { padding: 30px; }
 
@@ -848,49 +686,27 @@ textarea.input-field {
 
 
 
-/**
- * responsive for larger than 992px screen
- */
 
 @media (min-width: 992px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
 
   :root {
 
-    /**
-     * typography
-     */
 
     --fs-1: 5rem;
     --fs-2: 4rem;
     --fs-3: 2.5rem;
-
-    /**
-     * spacing
-     */
-
     --section-padding: 100px;
 
   }
 
 
 
-  /**
-   * REUSED STYLE
-   */
 
   .container { max-width: 960px; }
 
   .grid-list { grid-template-columns: repeat(3, 1fr); }
 
-
-
-  /**
-   * HEADER
-   */
 
   .nav-toggle-btn { display: none; }
 
@@ -927,10 +743,6 @@ textarea.input-field {
 
 
 
-  /**
-   * HERO
-   */
-
   .hero .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -961,9 +773,6 @@ textarea.input-field {
 
 
 
-  /**
-   * SERVICE
-   */
 
   .service-card { padding: 20px; }
 
@@ -971,17 +780,8 @@ textarea.input-field {
 
 
 
-  /**
-   * PROJECT
-   */
-
   .project-card .card-subtitle { --fs-6: 1.5rem; }
 
-
-
-  /**
-   * ABOUT
-   */
 
   .about .container {
     display: grid;
@@ -994,9 +794,6 @@ textarea.input-field {
 
 
 
-  /**
-   * BLOG
-   */
 
   .blog .grid-list {
     grid-template-columns: 1fr 1fr;
@@ -1020,10 +817,6 @@ textarea.input-field {
 
 
 
-  /**
-   * CONTACT
-   */
-
   .checkbox-wrapper { margin-block: 20px; }
 
   .contact-item { min-width: calc(33.33% - 16.66px); }
@@ -1037,22 +830,12 @@ textarea.input-field {
 
 
 
-
-/**
- * responsive for larger than 1200px screen
- */
-
 @media (min-width: 1200px) {
 
-  /**
-   * CUSTOM PROPERTY
-   */
+
 
   :root {
 
-    /**
-     * typography
-     */
 
     --fs-1: 6.8rem;
     --fs-2: 4.5rem;
@@ -1064,19 +847,6 @@ textarea.input-field {
 
 
 
-  /**
-   * REUSED STYLE
-   */
-
-  .container { max-width: 1140px; }
-
-  .btn { --fs-6: 1.5rem; }
-
-
-
-  /**
-   * SERVICE
-   */
 
   .service-card { padding: 30px; }
 
@@ -1084,9 +854,6 @@ textarea.input-field {
 
 
 
-  /**
-   * PROJECT
-   */
 
   .project-card .card-content { padding: 30px; }
 
@@ -1094,9 +861,6 @@ textarea.input-field {
 
 
 
-  /**
-   * ABOUT
-   */
 
   .about .container { gap: 60px; }
 
@@ -1106,17 +870,11 @@ textarea.input-field {
 
 
 
-  /**
-   * CTA
-   */
 
   .cta .section-title { margin-block: 15px 24px; }
 
 
 
-  /**
-   * CONTACT
-   */
 
   .contact-form { padding: 50px; }
 
